@@ -136,7 +136,7 @@ export default {};
     margin: 3rem 2rem;
   }
   .bottom-img {
-    height:25%;
+    height:100%;
   overflow: hidden;
 }
 .bottom-img img {
