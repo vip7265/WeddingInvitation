@@ -5,7 +5,7 @@
       <a href="https://github.com/jhn5052">Github: minji</a>
     </ul>
     <ul>
-      © 2021. All Rights Reserved.
+      © 2022. All Rights Reserved.
     </ul>
   </div>
 </template>
