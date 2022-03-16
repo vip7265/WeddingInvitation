@@ -295,7 +295,7 @@ export default {
   padding:0 1rem;
   letter-spacing: 1.3rem;
   margin-bottom: 3rem;
-  height: 105rem;
+  height: 120rem;
 }
 .empty-space {
   position: relative;
