@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="bottom-img">
-        <img :src="require('@/assets/images/long.jpg')" />
+        <!--<img :src="require('@/assets/images/long.jpg')" />-->
       </div>
     </div>
     <div class="divide-line"></div>
@@ -145,7 +145,7 @@ export default {};
 }
 @media (min-width: 380px) {
   .main-info {
-    height: 120rem;
+    height: 100rem;
   }
   .main-greeting {
     padding: 0 2.7rem;
@@ -161,7 +161,7 @@ export default {};
 }
 @media (min-width: 420px) {
   .main-info {
-    height: 120rem;
+    height: 100rem;
   }
   .main-info-title p {
     font-size:2.3rem;

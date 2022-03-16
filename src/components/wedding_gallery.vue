@@ -193,7 +193,7 @@ export default {
 }
 .wedding-bg-img{
   margin:auto auto;
-  max-width:500px;
+  max-width:100%;
 }
 .wedding-bg-img img {
   width:100%;
