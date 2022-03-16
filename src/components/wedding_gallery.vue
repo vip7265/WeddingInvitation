@@ -61,8 +61,30 @@
     <div v-if="clicked" class="empty-space"></div>
     
     <div class="wedding-map">
-      <p>오시는 길</p>
-      <img src="@/assets/images/map.jpg" />
+      <p style="font-size:2rem;">오시는 길</p>
+      <!--<img src="@/assets/images/map.jpg" />-->
+      <div class="main-info">
+        <p style="font-weight:bold;">서울대학교 교수회관</p>
+        <p>08826 서울시 관악구 관악로1 서울대학교 교수회관(65동)</p>
+        <div id="map" style="width:100%;height:500px;"></div>
+      </div>
+
+      <div class="main-info-2">
+        <p style="font-weight:bold;">지하철 이용시</p>
+        <p>2호선 낙성대역 하차 시: 4번출구(낙성대방향) 나와서 낙성주유소 뒤편 2번 마을버스 탑승<br>
+          ※ 마을버스 정거장 “노천강당 정류장 또는 공동기기원 정류장”
+          <br><br>
+          2호선 서울대입구역 하차 시 : 3번출구(서울대방향) 나와서 5511버스 탑승<br>
+          ※ 버스 정거장 “공동기기원”
+        </p>
+        <br>
+        <p style="font-weight:bold;">기타 이용시</p>
+        <p>서울대역, 낙성대역에서 택시로 5~10분 소요. <br/>
+            서울대 후문을 지나 기숙사 삼거리에서 왼쪽으로 올라 오십시오. <br/>
+            서울대 정문 들어와 좌회전 – 직진 - 기숙사삼거리에서 오른쪽 직진. <br/>
+            <p style="color: brown;">※ 낙성대 근처의 (호암교수회관)이 아닙니다.</p>
+        
+      </div>
     </div>
   </div>
 </template>
@@ -76,6 +98,17 @@ export default {
       current: 0,
     };
   },
+  mounted() { 
+    if (window.kakao && window.kakao.maps) {
+      this.initMap()
+    } else {
+      const script = document.createElement('script')
+      script.onload = () => window.kakao.maps.load(this.initMap);
+      script.src = 'http://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=cce889e7ce1b029ca09261197dfe7c84'
+      document.head.appendChild(script)
+    }
+  },
+
   methods: {
     handleBtn1() {
       this.touch = false;
@@ -93,6 +126,20 @@ export default {
     },
     handleCloseBtn(){
       this.clicked = !this.clicked;
+    },
+    initMap () {
+      const container = document.querySelector('#map')
+      const options = {
+        center: new window.kakao.maps.LatLng(37.45784171496702, 126.95389416739197),
+        level: 3
+      }
+      const map = new window.kakao.maps.Map(container, options)
+      const markerPosition = new window.kakao.maps.LatLng(37.45784171496702, 126.95389416739197);
+
+      const marker = new window.kakao.maps.Marker({
+        position: markerPosition
+      });
+      marker.setMap(map)
     }
   },
 };
@@ -243,15 +290,12 @@ export default {
   width:100%;
   height:100%;
 }
-.wedding-map p{
+.wedding-map {
   margin-top: 10rem;
-  font-size:2rem;
   padding:0 1rem;
   letter-spacing: 1.3rem;
-}
-.wedding-map img {
-  width: 100%;
   margin-bottom: 3rem;
+  height: 105rem;
 }
 .empty-space {
   position: relative;
@@ -273,5 +317,23 @@ export default {
  to{
    opacity: 0;
  }
+}
+.map-font p {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.main-info p {
+  font-size: 2rem;
+  letter-spacing: 0rem;
+}
+.main-info-2 p {
+  text-align: left;
+  letter-spacing: 0rem;
+  font-size: 1.5rem;
+}
+.#map { 
+  overflow: auto;
+  width:400px;
+  height:100%; 
 }
 </style>

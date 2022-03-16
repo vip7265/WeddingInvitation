@@ -1,8 +1,8 @@
 <template>
   <div class="footer">
     <ul>
-      email: leeseoooo@naver.com
-      <a href="https://github.com/leeseooo">Github: leeseooo</a>
+      email: jhn5052@naver.com
+      <a href="https://github.com/jhn5052">Github: minji</a>
     </ul>
     <ul>
       © 2021. All Rights Reserved.

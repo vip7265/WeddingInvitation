@@ -4,13 +4,13 @@
       <p>신랑에게 연락하기</p>
       <div class="buttons">
         <div class="contact-1-call">
-          <a href="tel:010-9856-2728"
+          <a href="tel:010-8907-7265"
             ><img :src="require('@/assets/images/phone.svg')"
           /></a>
         </div>
 
         <div class="contact-1-msg">
-          <a href="sms:010-9856-2728"
+          <a href="sms:010-8907-7265"
             ><img :src="require('@/assets/images/envelope.svg')"
           /></a>
         </div>
@@ -21,12 +21,12 @@
       <p>신부에게 연락하기</p>
       <div class="buttons">
         <div class="contact-2-call">
-          <a href="tel:010-7120-7907"
+          <a href="tel:010-9880-9450"
             ><img :src="require('@/assets/images/phone.svg')"
           /></a>
         </div>
         <div class="contact-2-msg">
-          <a href="sms:010-7120-7907"
+          <a href="sms:010-9880-9450"
             ><img :src="require('@/assets/images/envelope.svg')"
           /></a>
         </div>
@@ -52,32 +52,32 @@
         <p>신랑측 혼주</p>
         <div class="grooms-contact">
           <div>
-            <p>아버지 정양수</p>
+            <p>아버지 배대식</p>
             <div class="buttons parents">
               <div class="contact-1-call">
-                <a href="tel:010-6753-2728">
+                <a href="tel:010-0000-0000">
                   <div class="icon">
                     <img :src="require('@/assets/images/phone.svg')" /></div
                 ></a>
               </div>
               <div class="contact-1-msg">
-                <a href="sms:010-6753-2728"
+                <a href="sms:010-0000-0000"
                   ><div class="icon">
                     <img :src="require('@/assets/images/envelope.svg')" /></div
                 ></a>
               </div>
             </div>
           </div>
-          <p>어머니 김미화</p>
+          <p>어머니 도경숙</p>
           <div class="buttons parents">
             <div class="contact-1-call">
-              <a href="tel:010-3017-2728">
+              <a href="tel:010-0000-0000">
                 <div class="icon">
                   <img :src="require('@/assets/images/phone.svg')" /></div
               ></a>
             </div>
             <div class="contact-1-msg">
-              <a href="sms:010-3017-2728">
+              <a href="sms:010-0000-0000">
                 <div class="icon">
                   <img :src="require('@/assets/images/envelope.svg')" /></div
               ></a>
@@ -90,32 +90,32 @@
         <p>신부측 혼주</p>
         <div class="grooms-contact">
           <div>
-            <p>아버지 이영재</p>
+            <p>아버지 한규석</p>
             <div class="buttons parents">
               <div class="contact-1-call">
-                <a href="tel:010-5342-7907">
+                <a href="tel:010-6231-2437">
                   <div class="icon">
                     <img :src="require('@/assets/images/phone.svg')" /></div
                 ></a>
               </div>
               <div class="contact-1-msg">
-                <a href="sms:010-5342-7907">
+                <a href="sms:010-6231-2437">
                   <div class="icon">
                     <img :src="require('@/assets/images/envelope.svg')" /></div
                 ></a>
               </div>
             </div>
           </div>
-          <p>어머니 이용선</p>
+          <p>어머니 박두례</p>
           <div class="buttons parents">
             <div class="contact-1-call">
-              <a href="tel:010-2067-6907"
+              <a href="tel:010-6224-2437"
                 ><div class="icon">
                   <img :src="require('@/assets/images/phone.svg')" /></div
               ></a>
             </div>
             <div class="contact-1-msg">
-              <a href="sms:010-2067-6907">
+              <a href="sms:010-6224-2437">
                 <div class="icon">
                   <img :src="require('@/assets/images/envelope.svg')" /></div
               ></a>

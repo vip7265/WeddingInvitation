@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="title">
-      <p>/2022.2.19/</p>
-      <div class="desc">토요일 오후 3시 30분</div>
+      <p>/2022.5.01/</p>
+      <div class="desc">일요일 정오 12시 30분</div>
     </div>
     <div class="divide-line"></div>
 
@@ -20,11 +20,11 @@
           :id="week.id"
         >
           {{ week.date }}
-          <div v-if="week.date == 31 || week.date == 2">
-            <div id="bar">설날연휴</div>
-          </div>
           <div v-if="week.date == 1">
-            <div id="bar">설날</div>
+            <div id="Dday"></div>
+          </div>
+          <div v-if="week.date == 5">
+            <div id="bar">어린이날</div>
           </div>
         </div>
       </div>
@@ -32,14 +32,14 @@
       <div class="week2">
         <div v-for="week in week2" :key="week" :class="week.style">
           {{ week.date }}
+          <div v-if="week.date == 8">
+            <div id="bar">석가탄신일</div>
+          </div>
         </div>
       </div>
       <div class="week3">
         <div v-for="week in week3" :key="week" :class="week.style">
           {{ week.date }}
-          <div v-if="week.date == 19">
-            <div id="Dday"></div>
-          </div>
         </div>
       </div>
       <div class="week4">
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="divide-line"></div>
-    <div class="counting">동현<span>♥</span>지은의 결혼식이 {{ getDate }}</div>
+    <div class="counting">인표<span>♥</span>지은의 결혼식이 {{ getDate }}</div>
     <div class="divide-line"></div>
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {
   computed: {
     getDate() {
       let count = new Date().getTime();
-      let dday = new Date("february 19, 2022 0:00:00").getTime();
+      let dday = new Date("may 01, 2022 0:00:00").getTime();
       let gap = dday - count;
       if (gap < 0) {
         return (
@@ -86,45 +86,45 @@ export default {
         { name: "Sat", style: null },
       ],
       week1: [
-        { date: 30, style: "box holiday", id: null },
-        { date: 31, style: "box holiday", id: "newyear" },
-        { date: 1, style: null, id: "newyear" },
+        { date: 1, style: "num1", id: "num1" },
         { date: 2, style: null, id: null },
         { date: 3, style: null, id: null },
         { date: 4, style: null, id: null },
-        { date: 5, style: null, id: null },
+        { date: 5, style: "box holiday", id: "어린이날" },
+        { date: 6, style: null },
+        { date: 7, style: null },
       ],
       week2: [
-        { date: 6, style: "sun" },
-        { date: 7, style: null },
-        { date: 8, style: null },
+        { date: 8, style: "box holiday", id: "석가탄신일" },
         { date: 9, style: null },
         { date: 10, style: null },
         { date: 11, style: null },
         { date: 12, style: null },
+        { date: 13, style: null },
+        { date: 14, style: null },
       ],
       week3: [
-        { date: 13, style: "sun" },
-        { date: 14, style: null },
-        { date: 15, style: null },
+        { date: 15, style: "sun" },
         { date: 16, style: null },
         { date: 17, style: null },
         { date: 18, style: null },
-        { date: 19, style: "num19" },
+        { date: 19, style: null },
+        { date: 20, style: null },
+        { date: 21, style: null },
       ],
       week4: [
-        { date: 20, style: "sun" },
-        { date: 21, style: null },
-        { date: 22, style: null },
+        { date: 22, style: "sun" },
         { date: 23, style: null },
         { date: 24, style: null },
         { date: 25, style: null },
         { date: 26, style: null },
+        { date: 27, style: null },
+        { date: 28, style: null },
       ],
       week5: [
-        { date: 27, style: "sun" },
-        { date: 28, style: null },
-        { date: null, style: null },
+        { date: 29, style: "sun" },
+        { date: 30, style: null },
+        { date: 31, style: null },
         { date: null, style: null },
         { date: null, style: null },
         { date: null, style: null },
@@ -194,7 +194,7 @@ export default {
 .box {
   text-align: center;
 }
-.num19 {
+.num1 {
   color: white;
 }
 #Dday {

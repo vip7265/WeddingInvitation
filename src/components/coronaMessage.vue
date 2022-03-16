@@ -12,7 +12,7 @@
       <p>부디 저희 결혼 소식이 불편한 마음으로 머물지 않고</p>
       <p>좋은 소식이 되길 바랍니다.</p>
     </div>
-    <div class="from">동현 & 지은 올림</div>
+    <div class="from">인표 & 지은 올림</div>
     <div class="leaf"><img :src="require('@/assets/images/leaf.png')" /></div>
   </div>
 </template>

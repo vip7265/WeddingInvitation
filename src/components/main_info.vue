@@ -1,29 +1,29 @@
 <template>
   <div class="container">
     <div class="main-picture">
-      <img src="@/assets/images/img15.jpg" />
+      <img src="@/assets/images/head.jpg" />
     </div>
     <div class="main-info">
       <div class="main-info-title">
         <p>The Marriage Of</p>
-        <p>/ 정동현 & 이지은 /</p>
+        <p>/ 배인표 & 한지은 /</p>
       </div>
       <div class="main-info-location">
-        <p>2022년 2월 19일 토요일 오후 3시 30분</p>
-        <p>당산 그랜드컨벤션센터 3층 리젠시홀</p>
+        <p>2022년 5월 1일 일요일 정오 12시 30분</p>
+        <p>서울대학교 교수회관 예식장</p>
       </div>
       <div class="divide-line"></div>
       <div class="main-greeting">
         <div class="main-greeting-title">
-          <p>2월 19일</p>
-          <p>정양수 ∙ 김미화의 <span>차남</span> 동현</p>
-          <p>이영재 ∙ 이용선의 <span>장녀</span> 지은</p>
+          <p>5월 1일</p>
+          <p>배대식 ∙ 도경숙의 <span>장남</span> 인표</p>
+          <p>한규석 ∙ 박두례의 <span>장녀</span> 지은</p>
           <p>결혼합니다</p>
         </div>
         <div class="main-greeting-text">
           <p>함께 있을 때 가장 나다운 모습이 되고</p>
           <p>함께 있을 때 미래를 꿈꾸게 하는 사람을 만났습니다</p>
-          <br />
+          <br/>
           <p>그 사람과 같은 방향을 바라보고</p>
           <p>인생이라는 여행을 함께 시작하려합니다</p>
           <p>사랑으로 함께 가는 길,</p>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="bottom-img">
-        <img :src="require('@/assets/images/img14.jpg')" />
+        <img :src="require('@/assets/images/long.jpg')" />
       </div>
     </div>
     <div class="divide-line"></div>
@@ -60,7 +60,7 @@ export default {};
 }
 .main-info {
   width: 100%;
-  height: 90rem;
+  height: 150rem;
 }
 .main-info-title p {
   justify-content: center;
@@ -106,11 +106,11 @@ export default {};
 }
 .bottom-img img {
   width: 100%;
-  transform: translate(0, -55%);
+  transform: translate(0, -8%);
 }
 @media (min-width: 350px) {
   .main-info {
-    height: 95rem;
+    height: 120rem;
   }
   .main-info-location p {
   font-size: 1.7rem;
@@ -145,7 +145,7 @@ export default {};
 }
 @media (min-width: 380px) {
   .main-info {
-    height: 97rem;
+    height: 120rem;
   }
   .main-greeting {
     padding: 0 2.7rem;
@@ -161,7 +161,7 @@ export default {};
 }
 @media (min-width: 420px) {
   .main-info {
-    height: 105rem;
+    height: 120rem;
   }
   .main-info-title p {
     font-size:2.3rem;
@@ -184,10 +184,10 @@ export default {};
     padding: 0 3rem;
   }
   .bottom-img {
-  height: 25%;
+    height: 100%; 
   }
   .bottom-img img {
-  transform: translate(0, -55%);
+  transform: translate(0, -8%);
 }
   .divide-line {
     margin: 3rem 3rem;

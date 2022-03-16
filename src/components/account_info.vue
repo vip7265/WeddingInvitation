@@ -9,8 +9,8 @@
               <div class="divide"></div>
               <div class="account-row">
                 <div class="account-row-column-text">
-                  <li>농협 86501117977</li>
-                  <li>예금주: 정양수</li>
+                  <li>신한 000-000-0000</li>
+                  <li>예금주: 배대식</li>
                 </div>
                 <button class="btn-copy" @click="copyInfo" id="groom-m">
                   복사하기
@@ -19,8 +19,8 @@
               <div class="padding"></div>
               <div class="account-row">
                 <div class="account-row-column-text">
-                  <li>농협 82108656096936</li>
-                  <li>예금주: 김미화</li>
+                  <li>신한 000-000-0000</li>
+                  <li>예금주: 도경숙</li>
                 </div>
                 <button class="btn-copy" @click="copyInfo" id="groom-w">
                   복사하기
@@ -32,8 +32,8 @@
               <div class="divide"></div>
               <div class="account-row">
                 <div class="account-row-column-text">
-                  <li>농협 3560213809763</li>
-                  <li>예금주: 정동현</li>
+                  <li>신한 000-000-0000</li>
+                  <li>예금주: 배인표</li>
                 </div>
                 <button class="btn-copy" @click="copyInfo" id="groom">
                   복사하기
@@ -44,24 +44,35 @@
           <!-- 여기까지 신랑측 계좌 -->
           <div class="modal-context-w" v-if="acc_w">
             <ul>
-              <li>신부혼주 계좌</li>
+            <li>신부혼주 계좌</li>
               <div class="divide"></div>
               <div class="account-row">
                 <div class="account-row-column-text">
-                  <li>농협 13004256015272</li>
-                  <li>예금주: 이용선</li>
+                  <li>국민 283010005219</li>
+                  <li>예금주: 한규석</li>
+                </div>
+                <button class="btn-copy" @click="copyInfo" id="bride-m">
+                  복사하기
+                </button>
+              </div>
+              <div class="padding"></div>
+              <div class="account-row">
+                <div class="account-row-column-text">
+                  <li>국민 43340201107724</li>
+                  <li>예금주: 박두례</li>
                 </div>
                 <button class="btn-copy" @click="copyInfo" id="bride-w">
                   복사하기
                 </button>
               </div>
+              
               <!-- 신부혼주 계좌 -->
               <li class="padding">신부 계좌</li>
               <div class="divide"></div>
               <div class="account-row">
                 <div class="account-row-column-text">
-                  <li>국민 97120790768</li>
-                  <li>예금주: 이지은</li>
+                  <li>신한 110478855586</li>
+                  <li>예금주: 한지은</li>
                 </div>
                 <button class="btn-copy" @click="copyInfo">복사하기</button>
               </div>
@@ -92,10 +103,11 @@ export default {
     return {
       acc_w: false,
       isClicked: false,
-      groom: "농협 3560213809763",
-      bride: "국민 97120790768",
-      groom_m: "농협 86501117977",
-      groom_w: "농협 82108656096936",
+      groom: "신한 000-000-0000",
+      bride: "국민 283010005219",
+      groom_m: "신한 000-000-0000",
+      groom_w: "신한 000-000-0000",
+      bride_m: "농협 13004256015272",
       bride_w: "농협 13004256015272",
     };
   },
@@ -123,6 +135,10 @@ export default {
         document.execCommand("copy");
       } else if (buttonId == "groom") {
         t.value = this.groom;
+        t.select();
+        document.execCommand("copy");
+      } else if (buttonId == "bride-m") {
+        t.value = this.bride_w;
         t.select();
         document.execCommand("copy");
       } else if (buttonId == "bride-w") {
