@@ -32,9 +32,6 @@
           <p>큰 기쁨으로 간직하겠습니다</p>
         </div>
       </div>
-      <div class="bottom-img">
-        <!--<img :src="require('@/assets/images/long.jpg')" />-->
-      </div>
     </div>
     <div class="divide-line"></div>
   </div>
@@ -60,7 +57,7 @@ export default {};
 }
 .main-info {
   width: 100%;
-  height: 150rem;
+  height: 95rem;
 }
 .main-info-title p {
   justify-content: center;
@@ -145,7 +142,7 @@ export default {};
 }
 @media (min-width: 380px) {
   .main-info {
-    height: 100rem;
+    height: 95rem;
   }
   .main-greeting {
     padding: 0 2.7rem;
@@ -161,7 +158,7 @@ export default {};
 }
 @media (min-width: 420px) {
   .main-info {
-    height: 100rem;
+    height: 95rem;
   }
   .main-info-title p {
     font-size:2.3rem;

@@ -192,8 +192,8 @@ export default {
   display: flex;
 }
 .wedding-bg-img{
-  margin:auto auto;
-  max-width:100%;
+  margin:0 auto;
+  max-width:500px;
 }
 .wedding-bg-img img {
   width:100%;
@@ -295,7 +295,7 @@ export default {
   padding:0 1rem;
   letter-spacing: 1.3rem;
   margin-bottom: 3rem;
-  height: 115rem;
+  height: 105rem;
 }
 .empty-space {
   position: relative;
