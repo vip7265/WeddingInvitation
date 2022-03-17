@@ -29,34 +29,33 @@
 
     <!-- 썸네일  -->
     <div class="thubmnail-bg" v-if="!clicked">
-        <div id="slider">
-    <input checked="" type="radio" name="slider" id="slide1" selected="false">
-    <input type="radio" name="slider" id="slide2" selected="false">
-    <input type="radio" name="slider" id="slide3" selected="false">
-    <input type="radio" name="slider" id="slide4" selected="false">
-    <div id="slides">
-      <div id="overflow">
-        <div class="inner">
-          <article>
-            <content select="img:nth-of-type(1)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(2)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(3)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(4)"></content>
-          </article>
-        </div> <!-- .inner -->
-      </div> <!-- #overflow -->
-    </div>
-    <label for="slide1"></label>
-    <label for="slide2"></label>
-    <label for="slide3"></label>
-    <label for="slide4"></label>
-    </div>
+      <img :src="require('@/assets/images/thumbnail.png')"/>
+      <!-- 클릭박스 -->
+      <div class="img-1" @click="clicked=true;current=0"></div>
+      <div class="img-2" @click="clicked=true;current=1"></div>
+      <div class="img-3" @click="clicked=true;current=2"></div>
+      <div class="img-4" @click="clicked=true;current=3"></div>
+      <!-- 1열 -->
+      <div class="img-5" @click="clicked=true;current=4"></div>
+      <div class="img-6" @click="clicked=true;current=5"></div>
+      <div class="img-7" @click="clicked=true;current=6"></div>
+      <div class="img-8" @click="clicked=true;current=7"></div>
+      <!-- 2열 -->
+      <div class="img-9" @click="clicked=true;current=8"></div>
+      <div class="img-10" @click="clicked=true;current=9"></div>
+      <div class="img-11" @click="clicked=true;current=10"></div>
+      <div class="img-12" @click="clicked=true;current=11"></div>
+      <!-- 3열 -->
+      <div class="img-13" @click="clicked=true;current=12"></div>
+      <div class="img-14" @click="clicked=true;current=13"></div>
+      <div class="img-15" @click="clicked=true;current=14"></div>
+      <div class="img-16" @click="clicked=true;current=15"></div>
+      <!-- 4열 -->
+      <div class="img-17" @click="clicked=true;current=16"></div>
+      <div class="img-18" @click="clicked=true;current=17"></div>
+      <div class="img-19" @click="clicked=true;current=18"></div>
+      <div class="img-20" @click="clicked=true;current=19"></div>
+      <!-- 5열 -->
     </div>
 
     <div v-if="clicked" class="empty-space"></div>
@@ -76,8 +75,8 @@
           ※ 마을버스 정거장 “노천강당 정류장 또는 공동기기원 정류장”에서 하차
           <br><br>
           2호선 서울대입구역 하차 시 : 3번출구(서울대방향) 나와서 5511버스 탑승<br>
-          ※ 버스 정거장 “공동기기원 정류장”에서 하차
-        </p>
+          ※ 버스 정거장 “공동기기원 정류장” 에서 하차
+        </p> 
         <br>
         <p style="font-weight:bold;">기타 이용시</p>
         <p>서울대역, 낙성대역에서 택시로 5~10분 소요. <br/>
