@@ -109,7 +109,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 768px;
+  max-width: 100vw;
   margin:0 auto;
 }
 .fade-enter-active,
@@ -242,17 +242,13 @@ export default {
 }
 .thubmnail-bg{
   position: relative;
-  width:100%;
+  width:100vw;
   margin:0 auto;
   display: flex;
   justify-content: center;
  background: rgb(243, 243, 243);
 }
 .thubmnail-bg img{
-  width:100%;
-  height:100%;
-}
-.thubmnail-bg slide{
   width:100%;
   height:100%;
 }
