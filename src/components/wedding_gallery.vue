@@ -109,7 +109,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 100vw;
+  max-width: 768px;
   margin:0 auto;
 }
 .fade-enter-active,

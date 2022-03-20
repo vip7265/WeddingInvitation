@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="title">
-      <p>/2022.5.01/</p>
+      <p>/2022.05.01/</p>
       <div class="desc">일요일 정오 12시 30분</div>
     </div>
     <div class="divide-line"></div>
