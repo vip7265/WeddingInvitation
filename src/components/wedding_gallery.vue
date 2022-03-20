@@ -242,7 +242,7 @@ export default {
 }
 .thubmnail-bg{
   position: relative;
-  width:100vw;
+  width:100%;
   margin:0 auto;
   display: flex;
   justify-content: center;
