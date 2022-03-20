@@ -4,7 +4,7 @@
 
     <!-- 썸네일  -->
     <div class="thubmnail-bg">
-      <slide :src="require('@/assets/images/img5.jpg')"  :data="slide"/>
+      <slide :data="slide"/>
     </div>
 
     
