@@ -30,14 +30,16 @@
             서울대 후문을 지나 기숙사 삼거리에서 왼쪽으로 올라 오십시오. <br/>
             서울대 정문 들어와 좌회전 – 직진 - 기숙사삼거리에서 오른쪽 직진. <br/>
             <p style="color: brown;">※ 낙성대 근처의 (호암교수회관)이 아닙니다.</p>
-        <a href="https://map.kakao.com/link/map/서울대학교교수회관,37.45784171496702,126.95389416739197"
-            ><img class="phonemap" :src="require('@/assets/images/kakaomap.jpg')"/></a>
-        <a href="https://m.place.naver.com/place/13061241/location?subtab=location"
-            ><img class="phonemap" :src="require('@/assets/images/navermap.jpg')"/></a>
-        <a href="tmap://search?name=서울대학교 교수회관"
-            ><img class="phonemap" :src="require('@/assets/images/tmap.jpg')"/></a>
       </div>
 
+    <div class="phonemap-container">
+        <a href="https://map.kakao.com/link/map/서울대학교교수회관,37.45784171496702,126.95389416739197"
+            ><img class="phonemap" :src="require('@/assets/images/kakaomap.jpg')"/></a>
+        <a href="nmap://search?query=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80&appname=jieun-inpyo"
+            ><img class="phonemap" :src="require('@/assets/images/navermap.jpg')"/></a>
+        <a href="tmap://search?name=서울대교수회관웨딩홀"
+            ><img class="phonemap" :src="require('@/assets/images/tmap.jpg')"/></a>
+    </div>
     </div>
   </div>
 </template>
@@ -302,6 +304,13 @@ export default {
   overflow: auto;
   width:400px;
   height:100%; 
+}
+.phonemap-container {
+  margin:0 auto;
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .phonemap {
   width: 45px;
