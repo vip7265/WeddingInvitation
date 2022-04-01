@@ -45,13 +45,11 @@ export default {};
 }
 @media (min-width: 350px) {
   .container {
-    padding:0 2rem;
   font-size: 1.4rem;
 }
 }
 @media (min-width: 380px) {
   .container {
-    padding:0 2rem;
   font-size: 1.5rem;
   height: 55rem;
 }

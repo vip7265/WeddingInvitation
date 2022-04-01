@@ -45,7 +45,7 @@ export default {};
 .container{
   max-width:768px;
   margin:0 auto;
-  width:96%;
+  width:100%;
 }
 .main-picture {
   display: flex;

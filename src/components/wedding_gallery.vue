@@ -110,7 +110,6 @@ export default {
 <style scoped>
 .container {
   max-width: 768px;
-  margin:0 auto;
 }
 .fade-enter-active,
 .fade-leave-active {
