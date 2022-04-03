@@ -34,20 +34,10 @@
     </div>
     <!-- 신부에게 연락하기 -->
 
-    <!-- 토글 -->
-    <div v-if="!toggle" >
-      <button @click="handleToggleButton">
-        <i class="fas fa-sort-down fa-2x"></i>
-      </button>
-    </div>
-    <div v-else class="toggle-button">
-      <button @click="handleToggleButton">
-        <i class="fas fa-caret-up fa-2x"></i>
-      </button>
-    </div>
+    <div class="divide-line"></div>
 
     <!-- 토글버튼 -->
-    <div class="toggle-box" v-if="toggle">
+    <div class="toggle-box">
       <div class="grooms">
         <p>신랑측 혼주</p>
         <div class="grooms-contact">
@@ -55,13 +45,13 @@
             <p>아버지 배대식</p>
             <div class="buttons parents">
               <div class="contact-1-call">
-                <a href="tel:010-0000-0000">
+                <a href="tel:010-3544-4290">
                   <div class="icon">
                     <img :src="require('@/assets/images/phone.svg')" /></div
                 ></a>
               </div>
               <div class="contact-1-msg">
-                <a href="sms:010-0000-0000"
+                <a href="sms:010-3544-4290"
                   ><div class="icon">
                     <img :src="require('@/assets/images/envelope.svg')" /></div
                 ></a>
@@ -71,13 +61,13 @@
           <p>어머니 도경숙</p>
           <div class="buttons parents">
             <div class="contact-1-call">
-              <a href="tel:010-0000-0000">
+              <a href="tel:010-4727-4290">
                 <div class="icon">
                   <img :src="require('@/assets/images/phone.svg')" /></div
               ></a>
             </div>
             <div class="contact-1-msg">
-              <a href="sms:010-0000-0000">
+              <a href="sms:010-4727-4290">
                 <div class="icon">
                   <img :src="require('@/assets/images/envelope.svg')" /></div
               ></a>
@@ -144,9 +134,6 @@ export default {
 </script>
 
 <style scoped>
-.toggle-button {
-  animation: rotateX 300ms ease-in-out forwards;
-}
 .contact {
   display: flex;
   flex-direction: column;
@@ -191,7 +178,11 @@ export default {
   display: flex;
   font-size: 1.5rem;
   text-align: center;
-  animation: fadein 300ms ease-in-out forwards;
+}
+.divide-line {
+  width: 70%;
+  margin: 2rem 2rem;
+  border: 0.7px solid rgb(218, 218, 218);
 }
 .grooms,
 .brides {
