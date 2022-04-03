@@ -139,7 +139,7 @@ export default {
 .container {
   max-width: 768px;
   width: 96%;
-  margin: 3rem auto auto auto;
+  margin: 3rem auto 12rem auto;
 }
 .divide-line {
   margin: 3rem 3rem;

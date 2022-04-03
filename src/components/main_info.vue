@@ -57,7 +57,7 @@ export default {};
 }
 .main-info {
   width: 100%;
-  height: 95rem;
+  height: 82rem;
 }
 .main-info-title p {
   justify-content: center;
@@ -78,6 +78,7 @@ export default {};
 .main-greeting {
   margin: 0 auto;
   padding: 0 2.3rem;
+  text-align: center;
 }
 .main-greeting-title {
   padding-bottom: 4rem;

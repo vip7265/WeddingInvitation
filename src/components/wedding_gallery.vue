@@ -4,12 +4,12 @@
 
     <!-- 썸네일  -->
     <div class="thubmnail-bg">
-      <slide :data="slide"/>
+      <slide :data="slide" :time="5000"/>
     </div>
 
     
     <div class="wedding-map">
-      <p style="font-size:2rem;">오시는 길</p>
+      <p style="font-size:2rem; text-align:center;">오시는 길</p>
       <div class="main-info">
         <p style="font-weight:bold;">서울대학교 교수회관</p>
         <p>08826 서울시 관악구 관악로1 서울대학교 교수회관(65동)</p>
@@ -62,6 +62,10 @@ export default {
         'static/img/img6.jpg',
         'static/img/img7.jpg',
         'static/img/img8.jpg',
+        'static/img/img9.jpg',
+        'static/img/img10.jpg',
+        'static/img/img11.jpg',
+        'static/img/img12.jpg',
       ],
     };
   },
@@ -118,6 +122,7 @@ export default {
 <style scoped>
 .container {
   max-width: 768px;
+  margin: 0 auto;
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -128,9 +133,9 @@ export default {
   opacity: 0;
 }
 .title p {
+  text-align: center;
   font-size: 1.8rem;
   margin: 0 auto;
-  padding-left: 1.5rem;
   padding-bottom: 3rem;
   letter-spacing: 1.5rem;
 }
